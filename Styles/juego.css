@@ -1,27 +1,35 @@
 body {
+    margin: 0;
+    display: grid;
     background-color: black;
 }
 
-#Titulo{
+#titulo {
     color: white;
-    font-family: sans-serif;
-    align-content: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#menu_principal{
+    font-family: "Saira Stencil";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-#menu{
-    color: white;
-    justify-items: center;
+#barra_estado {
+    width: 600px;
+    height: auto;
     background-color: red;
-    height: 500px;
-    .menu{
-        background-color: blue;
-        list-style-type: none;
-        height: 50%;
-        margin: 0;
-        padding: 0;
-    }
 }
-h2{
+
+h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
 }
