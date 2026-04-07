@@ -13,3 +13,6 @@ const opt = document.getElementById("Opts")
 opt.addEventListener("click", ()=>{
     document.body.style.backgroundColor = "black";
 })
+
+let saludo = "Hola"
+console.log(saludo)
