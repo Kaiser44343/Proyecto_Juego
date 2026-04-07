@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+#Titulo{
+    color: white;
+    font-family: sans-serif;
+    align-content: center;
+}
+
+#menu{
+    color: white;
+    justify-items: center;
+    background-color: red;
+    height: 500px;
+    .menu{
+        background-color: blue;
+        list-style-type: none;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+}
