@@ -1,21 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Juego de Rodri Y Antonio</title>
+    <title>Proyecto Juego</title>
     <link rel="stylesheet" href="Styles/juego.css">
     <script src="Script/juego.js" defer></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h2 id="Titulo">Minijuego</h2>
-    <div id="menu">
-        <ul>
-            <li id="continue" class="menu">Continuar</li>
-            <li id="NewG" class="menu">Nueva Partida</li>
-            <li id="Opts" class="menu">Opciones</li>
-            <li id="Exit" class="menu">Salir</li>
-        </ul>
+    <!-- Barra de estado superior -->
+    <header id="barra_estado">
+        <div id="nombre_personaje">Personaje: <span>Nombre</span></div>
+        <div id="tipo_clase">Clase: <span>Guerrero</span></div>
+    </header>
+
+    <!-- Menu Principal -->
+    <h1 id="titulo">TÍTULO DEL JUEGO</h1>
+    <div id="menu_principal">
+        <button id="NewG">Nueva partida</button>
+        <button id="continue">Continuar</button>
+        <button id="Opts">Opciones</button>
+        <button id="Exit">Salir</button>
+    </div>
+
+    <!-- Panel inferior de acciones -->
+    <div id="divpadre">
+        <div id="box1" class="hijo">
+            Acción 1
+            <div class="escondido" id="subbox1">Submenú 1</div>
+        </div>
+        <div id="box2" class="hijo">
+            Acción 2
+            <div class="escondido" id="subbox2">Submenú 2</div>
+        </div>
+        <div id="box3" class="hijo">
+            Acción 3
+            <div class="escondido" id="subbox3">Submenú 3</div>
+        </div>
+        <div id="box4" class="divhijo">
+            Acción 4
+            <div class="escondido" id="subbox4">Submenú 4</div>
+        </div>
     </div>
 </body>
+
 </html>
