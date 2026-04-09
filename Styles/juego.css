@@ -15,7 +15,7 @@ body {
 
 }
 #menu_principal{
-    font-family: "Saira Stencil";
+    font-family: "Saira Stencil", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,13 +23,129 @@ body {
     gap: 10px;
 }
 
-#barra_estado {
-    width: 600px;
+.barra_estado{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
     height: auto;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    justify-self: center; /* Centra el elemento en el grid del body */
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.barra_estado:hover {
+    background-color: #444;
+    transform: translateY(2px);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3); /* Sutil brillo rojo */
+    cursor: pointer;
+}
+
+/* Pantalla de Selección de Personaje */
+#seleccion_personaje {
+    display: none;
+    position: fixed; /*para q quede por encima*/
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.contenedor_seleccion {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #444;
+    max-width: 900px;
+    width: 90%;
+}
+
+.clases {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.clase {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.clase:hover {
+    transform: scale(1.05);
+    border-color: red;
+}
+
+.clase img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.btn_seleccionar {
     background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn_cancelar {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
 }
+
+.clase h3 {
+    color: red;
+    font-family: "Saira Stencil", sans-serif;
+}
+
+.clase p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+#divpadre{
+    font-family: "Saira Stencil", sans-serif;
+    justify-self:center;
+    margin-top: 30px;
+    justify-content: center;
+}
+.hijo{
+    z-index: 0;
+    background-color: darkgreen;
+}
+.escondido{
+    z-index: -1;
+    background-color: beige;
+}
+
