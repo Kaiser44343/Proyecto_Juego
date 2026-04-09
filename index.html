@@ -18,9 +18,9 @@
 
 <body>
     <!-- Barra de estado superior -->
-    <header id="barra_estado">
+    <header id="bar_estado" class="barra_estado">
         <div id="nombre_personaje">Personaje: <span>Nombre</span></div>
-        <div id="tipo_clase">Clase: <span>Guerrero</span></div>
+        <div id="tipo_clase">Clase: <span> Indefinido </span></div>
     </header>
 
     <!-- Menu Principal -->
@@ -30,6 +30,34 @@
         <button id="continue">Continuar</button>
         <button id="Opts">Opciones</button>
         <button id="Exit">Salir</button>
+    </div>
+
+    <!-- Pantalla de selección_personaje -->
+    <div id="seleccion_personaje" class="">
+        <div class="contenedor_seleccion">
+            <h2>Elige tu Clase</h2>
+            <div class="clases">
+                <div class="clase" id="clase_asesino">
+                    <img src="Assets/asesino.png" alt="Asesino">
+                    <h3>Asesino</h3>
+                    <p>Sigilo y daño crítico.</p>
+                    <button class="btn_seleccionar">Elegir</button>
+                </div>
+                <div class="clase" id="clase_mago">
+                    <img src="Assets/mago.png" alt="Mago">
+                    <h3>Mago</h3>
+                    <p>Magia arcana y control.</p>
+                    <button class="btn_seleccionar">Elegir</button>
+                </div>
+                <div class="clase" id="clase_soldado">
+                    <img src="Assets/soldado.png" alt="Soldado">
+                    <h3>Soldado</h3>
+                    <p>Defensa y fuerza bruta.</p>
+                    <button class="btn_seleccionar">Elegir</button>
+                </div>
+            </div>
+            <button id="btn_cancelar">Volver</button>
+        </div>
     </div>
 
     <!-- Panel inferior de acciones -->
@@ -46,7 +74,7 @@
             Acción 3
             <div class="escondido" id="subbox3">Submenú 3</div>
         </div>
-        <div id="box4" class="divhijo">
+        <div id="box4" class="hijo">
             Acción 4
             <div class="escondido" id="subbox4">Submenú 4</div>
         </div>
