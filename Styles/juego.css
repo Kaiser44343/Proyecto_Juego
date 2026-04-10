@@ -1,12 +1,16 @@
 body {
     margin: 0;
     display: grid;
-    background-color: black;
+    background-color: #444;
+    background-image: url("../Assets/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #titulo {
     color: white;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Saira Stencil", sans-serif;
     font-size: 3em;
     font-style: normal;
     display: flex;
@@ -14,13 +18,39 @@ body {
     align-items: center;
 
 }
-#menu_principal{
-    font-family: "Saira Stencil", sans-serif;
+#div_padre_menu{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    height: 20vh;
+    margin-top: 10%;
+}
+#menu_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 2px solid #333;
+    border-right: 4px solid #ffaa00;
+    border-right-radius: 10px;
+    border-right-style:groove;
+    box-shadow: 8px 0px 12px -3px rgba(255, 255,0, 0.6);
+
+}
+
+.botones_menu{
+    cursor: pointer;
+    font-family: "Saira Stencil";
+    font-size: 2.2em;
+    color: whitesmoke;
+    display: flex;
+    background: transparent;
+    border: none;
 }
 
 .barra_estado{
