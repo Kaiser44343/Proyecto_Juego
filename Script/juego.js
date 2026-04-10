@@ -54,7 +54,8 @@ Mago.addEventListener("click", ()=>{
 const empezar = document.querySelectorAll(".btn_seleccionar")
 empezar.forEach(boton => {
     boton.addEventListener("click", ()=>{
-        
+        window.location.href = "pages/game_screen.html";
+
 })})
 
 const volver = document.getElementById("btn_cancelar")
