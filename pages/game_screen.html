@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de pantalla de juego</title>
+    <link rel="stylesheet" href="../Styles/juego.css">
+    <script src="../Script/juego.js" defer></script>
+        <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!--NOTAS: NUEVO CSS PARA ESTE GAME_SCREEN.HTML ! DE MOMENTO ESTÁ EL DE INDEX
+        TO DO: MODIFICAR LOS DIVS DEL PANEL INFERIOR
+        TO DO: MODIFICAR BARRA DE ESTADO Y ESTILO
+        TO DO: MODIFICAR EL BODY DE ESTE HTML, NUEVO BACKGROUND-->
+        <!-- Barra de estado superior -->
+    <header id="bar_estado" class="barra_estado">
+        <div id="nombre_personaje">Personaje: <span>Nombre</span></div>
+        <div id="tipo_clase">Clase: <span> Indefinido </span></div>
+    </header>
+    
+    <!-- Div pantalla principal-->
+     <div class="div_partida" id="div_padre_partida"> <!--TO DO 
+        Añadir mas divs?
+        --> </div>
+    
+
+        <!-- Panel inferior de acciones -->
+    <div id="divpadre">
+        <div id="box1" class="hijo">
+            Acción 1
+            <div class="escondido" id="subbox1">Submenú 1</div>
+        </div>
+        <div id="box2" class="hijo">
+            Acción 2
+            <div class="escondido" id="subbox2">Submenú 2</div>
+        </div>
+        <div id="box3" class="hijo">
+            Acción 3
+            <div class="escondido" id="subbox3">Submenú 3</div>
+        </div>
+        <div id="box4" class="hijo">
+            Acción 4
+            <div class="escondido" id="subbox4">Submenú 4</div>
+        </div>
+    </div>
+</body>
+</html>
