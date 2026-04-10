@@ -1,22 +1,15 @@
 //Menú
 
-const cont = document.getElementById("continue")
-//Cambiar los document.body.style.(relacionar el div que toque en cada caso).zindex
-cont.addEventListener("click", ()=>{
-    document.body.style.zindex = 0;
-    document.body.style.zindex = 1;
-})
 const nuevo = document.getElementById("NewG")
+const seleccion = document.getElementById("seleccion_personaje")
 
 nuevo.addEventListener("click", ()=>{
-    document.body.style.zindex = 0;
-    document.body.style.zindex = 1;
+    seleccion.style.display="flex";
 })
-const opt = document.getElementById("Opts")
 
-opt.addEventListener("click", ()=>{
-    document.body.style.zindex = 0;
-    document.body.style.zindex = 1;
+const salir = document.getElementById("Exit")
+salir.addEventListener("click", ()=>{
+    window.close()
 })
 
 //Clases
@@ -32,41 +25,43 @@ let personaje = {
     daño: 20
 }
 
-const Soldado = document.getElementById("")
+const Soldado = document.getElementById("clase_soldado")
 Soldado.addEventListener("click", ()=>{
     personaje.clase = "Soldado"
+    personaje.arma = "Espada"
+    personaje.daño = 50;
+    personaje.defensa = 20
 })
 
-const Asesino = document.getElementById("")
+const Asesino = document.getElementById("clase_asesino")
 Asesino.addEventListener("click", ()=>{
     personaje.clase = "Asesino"
+     personaje.arma = "Daga"
+    personaje.daño = 20;
+    personaje.nturnos = 2;
+    personaje.vida = 70;
 })
 
-const Mago = document.getElementById("")
+const Mago = document.getElementById("clase_mago")
 Mago.addEventListener("click", ()=>{
     personaje.clase = "Mago"
+    personaje.arma = "Baston"
+    personaje.daño = 70;
+    personaje.defensa = -10;
+    personaje.vida = 60;
 })
 
+const empezar = document.querySelectorAll(".btn_seleccionar")
+empezar.forEach(boton => {
+    boton.addEventListener("click", ()=>{
+        
+})})
 
-switch(true){
-    case personaje.arma == "Soldado":
-        personaje.arma = "Espada"
-        personaje.daño = 50;
-        personaje.defensa = 20
-        break;
-    case personaje.clase == "Asesino":
-        personaje.arma = "Daga"
-        personaje.daño = 20;
-        personaje.nturnos = 2;
-        personaje.vida = 70;
-        break;
-    case personaje.arma == "Mago":
-        personaje.arma = "Baston"
-        personaje.daño = 70;
-        personaje.defensa = -10;
-        personaje.vida = 60;
-        break;
-}
+const volver = document.getElementById("btn_cancelar")
+volver.addEventListener("click", ()=>{
+    seleccion.style.display="none";
+})
+
 
 
 //Codigo para usar mas adelante
